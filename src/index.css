@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #f3f4f6; /* Change background color to a lighter shade */
+}
+body {
+  font-family: "Poppins", sans-serif; /* Change font family */
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.5; /* Improve line height for better readability */
+}
+a {
+  text-decoration: none !important;
+}
+button:hover {
+  background: transparent !important;
+  color: black !important;
+  outline: none !important;
+}
+.s-input {
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Adjust border-radius for input */
+  background: #fff;
+  padding: 10px;
+  height: 40px;
+}
+.s-input:focus {
+  outline: none;
+  border-color: #4f46e5; /* Change border color on focus */
+}
+input {
+  background-color: #fff;
+  height: 45px;
+  border-radius: 10px; /* Adjust border-radius for input */
+  padding: 10px; /* Add padding */
+  border: 1px solid #ccc; /* Add border */
+  transition: border-color 0.3s; /* Add transition effect */
+}
+input:focus {
+  outline: none;
+  border-color: #4f46e5; /* Change border color on focus */
+}
+.dish {
+  background: transparent;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+}
+.dish:focus {
+  outline: none;
+}
+.dnf {
+  border: 1px solid #ccc;
+}
+
+/* Add animation keyframes */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-in-out;
+}
+
+/* Import Google font */
+
+/* Additional styles can be added as per requirement */
